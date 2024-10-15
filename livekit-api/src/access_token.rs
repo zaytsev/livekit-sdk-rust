@@ -72,6 +72,8 @@ pub struct VideoGrants {
 
     // indicates to the room that current participant is a recorder
     pub recorder: bool,
+
+    pub agent: bool,
 }
 
 impl Default for VideoGrants {
@@ -91,6 +93,7 @@ impl Default for VideoGrants {
             ingress_admin: false,
             hidden: false,
             recorder: false,
+            agent: false,
         }
     }
 }
